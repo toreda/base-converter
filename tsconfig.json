@@ -1,0 +1,38 @@
+{
+	"exclude": ["node_modules", "**/*.spec.ts", "tests", "dist/**"],
+	"include": ["./src/index.ts", "./src/"],
+	"filesGlob": ["./src/index.ts", "./src/*.ts", "./src/**/*.ts"],
+	"compilerOptions": {
+		"allowUnreachableCode": false,
+		"alwaysStrict": true,
+		"declaration": true,
+		"esModuleInterop": true,
+		"isolatedModules": false,
+		"lib": ["es6", "DOM", "DOM.Iterable"],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitUseStrict": false,
+		"outDir": "./dist",
+		"preserveConstEnums": true,
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"rootDir": ".",
+		"sourceMap": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"target": "es6",
+		"traceResolution": false,
+		"paths": {}
+	},
+	"ts-jest": {
+		"compilerOptions": {
+			"module": "commonjs"
+		}
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"module": "commonjs"
+		}
+	}
+}
